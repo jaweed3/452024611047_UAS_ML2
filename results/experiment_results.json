@@ -1,0 +1,35 @@
+{
+  "experiment": "YOLOv8n \u2014 FP32 vs ONNX INT8 vs Fine-tune",
+  "dataset": "COCO128 (128 images, 80 classes)",
+  "date": "2026-08-14T18:31:45.873491",
+  "scenarios": {
+    "E1_PyTorch_FP32": {
+      "map50": 0.7257,
+      "map50_95": 0.5499,
+      "precision": 0.7437,
+      "recall": 0.6534,
+      "model_size_mb": 6.25
+    },
+    "E2_ONNX_INT8": {
+      "mean_latency_ms": 78.84,
+      "fps": 12.7,
+      "model_size_mb": 3.34,
+      "map50": 0.7257,
+      "map50_95": 0.5499,
+      "precision": 0.7437,
+      "recall": 0.6534
+    },
+    "E3_Finetune_Freeze10": {
+      "map50": 0.7588,
+      "map50_95": 0.5823,
+      "precision": 0.8096,
+      "recall": 0.6859,
+      "model_size_mb": 6.23
+    }
+  },
+  "comparison": {
+    "mAP_drop_int8_vs_fp32": 0.0,
+    "mAP_gain_finetune_vs_fp32": 0.0331,
+    "size_reduction_int8": 1.87
+  }
+}

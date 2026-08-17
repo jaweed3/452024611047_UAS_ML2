@@ -1,0 +1,35 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Large files (download during setup)
+*.zip
+*.tar
+
+# Model weights (too large for git)
+*.pt
+*.onnx
+*.tflite
+*.weights
+
+# Calibration data
+calibration_*.npy
+
+# Raw dataset (download during setup)
+dataset/_raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Lock file (regenerate with uv lock)
+uv.lock

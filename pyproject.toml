@@ -1,0 +1,13 @@
+[project]
+name = "voc-yolo-pipeline"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "ultralytics>=8.0",
+    "tensorflow>=2.15",
+    "opencv-python>=4.8",
+    "tqdm",
+    "pyyaml",
+    "numpy",
+    "matplotlib",
+]
